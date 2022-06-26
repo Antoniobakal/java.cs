@@ -190,3 +190,90 @@ function convertToBoolean(arr){
 
 console.log(convertToBoolean(['Banana',0,'Apple', [], 0]))
 */
+
+
+//Advanceddddddddddddddddddddddddddd
+
+/*
+function showRaiting(raiting){
+  let raitings = "";
+  for(let i = 0;i < Math.floor(raiting) ; i++){
+  raitings += "*"
+    if (i !== Math.floor(raiting) - 1){
+      raitings += " "
+    }
+  }
+  if (!Number.isInteger(raiting)){
+    raitings += " ."
+  }
+  return raitings;
+}
+
+
+console.log(showRaiting(1.5))
+
+*/
+/*
+function sortLowToHeigh(numbers){
+  return numbers.sort((a, b) => a - b)
+  
+}
+console.log(sortLowToHeigh([1 , 5, 0 ,15 ,4, -10]))
+*/
+
+/*
+function sortLowToHeigh(numbers){
+  return numbers.sort((a, b) => {
+
+  return  b.price - a.price; 
+})
+
+}
+console.log(
+  sortLowToHeigh([
+  { id: 1,price: 50},
+  {id: 2,price: 0 },
+  {id: 3,price: 500 },
+  { id: 4,price: 150},
+  {id: 5,price: 20 },
+  {id: 6,price: 5400 },
+  { id: 7,price: 550},
+  {id: 8,price: 10 },
+  {id: 9,price: 14500 },
+])
+);
+*/
+
+
+
+/*
+ async function postsByUser(userid){
+  const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+  const result = await promise.json();
+
+  const posts = result.filter(element => element.userid === userid);
+
+  console.log(posts); 
+  
+}
+
+postsByUser(5);
+*/
+
+/*
+async function incompleteTasks(userids){
+
+  const promise = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+  const result = await promise.json();
+
+const incompleteTasks = result.filter(elem => !elem.completed).slice(0, 6);
+
+  console.log(incompleteTasks); 
+
+
+}
+
+incompleteTasks(6);
+*/
